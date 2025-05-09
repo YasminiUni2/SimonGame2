@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 class="title">Simon</h1>
+
+  <div id="scoreBar">Score: <span id="score">0</span></div>
+
+  <div id="board">
+    <div class="pad green"  id="green"></div>
+    <div class="pad red"    id="red"></div>
+    <div class="pad yellow" id="yellow"></div>
+    <div class="pad blue"   id="blue"></div>
+
+    <div id="center">
+      <span id="timer">00:00.00</span>
+    </div>
+  </div>
+
+  <button id="startBtn">Start Game</button>
+
+  <div id="overlay" class="hidden">
+    <h2>GAME OVER</h2>
+    <p>Your score: <span id="finalScore">0</span></p>
+  </div>
+
+  <div id="countdown" class="hidden">
+    <span id="countNum">3</span>
+  </div>
+
+  <!-- Suspense music -->
+  <audio id="bgm" src="song.mp3" preload="auto" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
